@@ -1,0 +1,9 @@
+Feature: Login
+  
+  Scenario: valid Login
+    Given I navigate to the site "https://propertyrete.com"
+    When I click on login button
+    And I enter my email address "blessings4u10@gmail.com"
+    And I enter my Password "12345hs"
+    And I click on Sign In
+    Then I am signed In

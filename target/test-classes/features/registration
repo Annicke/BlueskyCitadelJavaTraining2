@@ -1,0 +1,19 @@
+Feature: Registration
+  As a user of propertyrete
+  I want to register
+  So that i can get access to the site
+
+  Scenario: Valid registration
+    Given I navigate to the site "https://propertyrete.com"
+    When I click on register button
+    And I enter first name "Anne"
+    And I enter last name "Mensi"
+    And I enter email address "blessings4u10@gmail.com"
+    And I enter valid Mobile number "07575555555"
+    And I enter Password "12345hs"
+    And I enter confirm Password "12345hs"
+    And I check the checkbox
+    And I click on create account
+    And I paste the activation code received
+    And I click on active account
+    Then I am registered
